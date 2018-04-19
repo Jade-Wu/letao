@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <!-- 引入mui-css文件 -->
+    <link rel="stylesheet" href="./mui/css/mui.min.css">
+    <link rel="stylesheet" href="./mui/css/icons-extra.css">
+    <link rel="stylesheet" href="./mui/fonts/mui-icons-extra.ttf">
+    <style>
+        body{
+            height:100%;
+            background-color: #fff;
+        }
+        .mui-bar {
+            background-color: #006699;
+        }
+        .mui-title {
+            font-size: 20px;
+            color: #fff;
+        }
+        .mui-icon-arrowleft {
+            color: #fff;
+        }
+        .mui-input-group {
+            padding: 10px;
+        }
+        .mui-input-row {
+            box-shadow: 0 0 1px #333;
+        }
+        .mui-input-row:nth-child(2) {
+            margin: 20px 0 40px 0;
+        }
+        .mui-btn, button, input[type=button], input[type=reset], input[type=submit] {
+            font-size: 15px;
+            width: 100%;
+        }
+        .mui-input-group .mui-input-row:after {
+            background-color: transparent;
+        }
+        .mui-input-group:after {
+            background-color: transparent;  
+        }
+        .mui-button-row:nth-child(4) {
+            margin-top: 10px;
+            font-size: 15px;
+            text-align: right;
+        }
+
+        .mui-bar {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .mui-bar-tab .mui-tab-item {
+            color: #fff;
+        }
+        .mui-bar-tab .mui-tab-item.mui-active {
+            color: #fff;
+        }
+        .mui-bar .mui-icon {
+            font-size: 20px;
+        }
+        .mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label {
+            font-size: 14px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-bars mui-pull-left mui-icon mui-icon mui-icon-arrowleft"></a>
+        <a id="info" class="mui-icon mui-icon-info-filled mui-pull-right mui-plus-visible" style="color: #999;"></a>
+        <h1 class="mui-title">登录</h1>
+    </header>
+    <div class="mui-content">
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+            <input type="text" class="mui-input-clear" placeholder="用户名/手机">
+            </div>
+            <div class="mui-input-row">
+                <input type="password" class="mui-input-password" placeholder="密码">
+                <span class="mui-icon mui-icon-eye"></span>
+            </div>
+            <div class="mui-button-row">
+                <button type="button" class="mui-btn mui-btn-primary" >登录</button>
+            </div>
+            <div class="mui-button-row">
+                <a class="free-zc" href="javascript:;">免费注册</a>
+            </div>
+        </form>
+    </div>
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+	</nav>
+</body>
+</html>
