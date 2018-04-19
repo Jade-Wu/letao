@@ -1,0 +1,43 @@
+body {
+    background-color: #efeff4;
+}
+
+/* 主体 */
+.mui-content>.mui-table-view:first-child {
+    margin-top: 0;
+}
+/* user */
+.table-view-user img {
+    float: left;
+    margin-right: 12px;
+    width: 38px;
+    height: 38px;
+}
+.table-view-user .table-view-users {
+    font-size: 18px;
+    color: #000;
+}
+.table-view-user .table-view-phone {
+    font-size: 13px;
+}
+
+/* 退出登录 */
+.mui-btn, button, input[type=button], input[type=reset], input[type=submit] {
+    font-size: 15px;
+    width: 100%;
+}
+.mui-btn-blue, .mui-btn-primary, input[type=submit] {
+    color: #000;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.mui-button-row {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+/* 底部 */
+.mui-bar-tab .mui-tab-item:nth-child(4) {
+    font-weight: 700;
+    color: #ff8c00;
+}

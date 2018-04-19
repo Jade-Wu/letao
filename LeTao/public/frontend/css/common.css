@@ -1,0 +1,33 @@
+/* 顶部 */
+body{
+    height:100%;
+}
+.mui-bar {
+    background-color: #006699;
+}
+.mui-title {
+    font-size: 20px;
+    color: #fff;
+}
+.mui-icon-arrowleft {
+    color: #fff;
+}
+
+
+/* 底部 */
+.mui-bar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.mui-bar-tab .mui-tab-item {
+    color: #fff;
+}
+.mui-bar-tab .mui-tab-item.mui-active {
+    color: #fff;
+}
+.mui-bar .mui-icon {
+    font-size: 20px;
+}
+.mui-bar-tab .mui-tab-item .mui-icon~.mui-tab-label {
+    font-size: 14px;
+}
