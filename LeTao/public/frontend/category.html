@@ -10,30 +10,47 @@
     <link rel="stylesheet" href="./mui/css/mui.min.css">
     <link rel="stylesheet" href="./mui/css/icons-extra.css">
     <link rel="stylesheet" href="./mui/fonts/mui-icons-extra.ttf">
+    <link rel="stylesheet" href="./css/cate.css">
     <style>
         /* 顶部 */
 
         body {
             height: 100%;
-            background-color: #fff;
+            background-color: #c9c9c9;
         }
 
         .mui-bar {
             background-color: #006699;
         }
 
-        .mui-title {
-            font-size: 20px;
-            color: #fff;
+        .mui-bar-nav {
+            position: relative;
+            padding: 0;
         }
 
-        .mui-icon-arrowleft {
+        .mui-icon{
             color: #fff;
+        }
+        .mui-bar-nav.mui-bar .mui-icon {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+        }
+        .mui-icon-left {
+            top: 10px;
+            left: 10px;
+        }
+        .mui-icon-right {
+            top: 10px;
+            right: 10px;
+        }
+        .mui-bar-nav form {
+            padding: 0 40px;
+            width: 100%;
+            line-height: 45px;
         }
         input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
             height: 30px;
-            line-height: 44px;
-            /* padding: 0 39px 0 40px; */
         }
 
         /* 底部 */
@@ -69,69 +86,60 @@
 
 <body>
     <header class="mui-bar mui-bar-nav">
-        <a class="mui-icon mui-icon-bars mui-pull-left mui-icon mui-icon mui-icon-arrowleft"></a>
-        <a id="info" class="mui-icon mui-icon-info-filled mui-pull-right" style="color: #999;"></a>
-        <input type="password" class="mui-input-password" data-input-password="3">
+        <a class="mui-icon mui-icon-arrowleft mui-icon-left"></a>
+        <form action="javascript:;">
+            <input type="password" class="mui-input-password" data-input-password="3">
+        </form>
+        <a class="mui-icon mui-icon-search mui-icon-right"></a>
     </header>
 
-    <div class="mui-content mui-row mui-fullscreen">
-        <div class="mui-col-xs-3">
-            <div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
-                <a class="mui-control-item mui-active" href="#content1">选项1</a>
-                <a class="mui-control-item" href="#content2">选项2</a>
-                <a class="mui-control-item" href="#content3">选项3</a>
-                <a class="mui-control-item" href="#content4">选项4</a>
-                <a class="mui-control-item" href="#content5">选项5</a>
-            </div>
+    <main class="main-container">
+        <!-- 左侧 -->
+        <div class="main-left">
+            <ul>
+                <li class="active">运动馆</li>
+                <li>女士馆</li>
+                <li>男士馆</li>
+                <li>帆布馆</li>
+                <li>户外馆</li>
+            </ul>
         </div>
-        <div id="segmentedControlContents" class="mui-col-xs-9" style="border-left: 1px solid #c8c7cc;">
-            <div id="content1" class="mui-control-content mui-active">
-                <ul class="mui-table-view">
-                    <li class="mui-table-view-cell">第1个选项卡子项-1</li>
-                    <li class="mui-table-view-cell">第1个选项卡子项-2</li>
-                    <li class="mui-table-view-cell">第1个选项卡子项-3</li>
-                    <li class="mui-table-view-cell">第1个选项卡子项-4</li>
-                    <li class="mui-table-view-cell">第1个选项卡子项-5</li>
-                </ul>
-            </div>
-            <div id="content2" class="mui-control-content">
-                <ul class="mui-table-view">
-                    <li class="mui-table-view-cell">第2个选项卡子项-1</li>
-                    <li class="mui-table-view-cell">第2个选项卡子项-2</li>
-                    <li class="mui-table-view-cell">第2个选项卡子项-3</li>
-                    <li class="mui-table-view-cell">第2个选项卡子项-4</li>
-                    <li class="mui-table-view-cell">第2个选项卡子项-5</li>
-                </ul>
-            </div>
-            <div id="content3" class="mui-control-content">
-                <ul class="mui-table-view">
-                    <li class="mui-table-view-cell">第3个选项卡子项-1</li>
-                    <li class="mui-table-view-cell">第3个选项卡子项-2</li>
-                    <li class="mui-table-view-cell">第3个选项卡子项-3</li>
-                    <li class="mui-table-view-cell">第3个选项卡子项-4</li>
-                    <li class="mui-table-view-cell">第3个选项卡子项-5</li>
-                </ul>
-            </div>
-            <div id="content4" class="mui-control-content">
-                <ul class="mui-table-view">
-                    <li class="mui-table-view-cell">第4个选项卡子项-1</li>
-                    <li class="mui-table-view-cell">第4个选项卡子项-2</li>
-                    <li class="mui-table-view-cell">第4个选项卡子项-3</li>
-                    <li class="mui-table-view-cell">第4个选项卡子项-4</li>
-                    <li class="mui-table-view-cell">第4个选项卡子项-5</li>
-                </ul>
-            </div>
-            <div id="content5" class="mui-control-content">
-                <ul class="mui-table-view">
-                    <li class="mui-table-view-cell">第5个选项卡子项-1</li>
-                    <li class="mui-table-view-cell">第5个选项卡子项-2</li>
-                    <li class="mui-table-view-cell">第5个选项卡子项-3</li>
-                    <li class="mui-table-view-cell">第5个选项卡子项-4</li>
-                    <li class="mui-table-view-cell">第5个选项卡子项-5</li>
-                </ul>
-            </div>
+        <!-- 右侧 -->
+        <div class="main-right">
+            <ul class="mui-clearfix">
+                <li>
+                    <a href="javascript:;">
+                        <img src="./images/brand1.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="./images/brand2.png" alt="">
+                        <p>阿迪</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="./images/brand3.png" alt="">
+                        <p>新百伦</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="./images/brand4.png" alt="">
+                        <p>哥伦比亚</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="./images/brand5.png" alt="">
+                        <p>匡威</p>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
+    </main>
 
     <nav class="mui-bar mui-bar-tab">
         <a class="mui-tab-item mui-active" href="#tabbar">

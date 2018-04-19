@@ -1,0 +1,64 @@
+.main-container {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 45px 0 50px 0;
+    width: 100%;  
+    height: 100%;
+}
+/* 左侧 */
+.main-left {
+    width: 80px;
+    /* height: 100%; */
+    /* float: left; */
+}
+.main-left ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-left li {
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border-bottom: 1px solid #c9c9c9;
+    text-align: center;
+    line-height: 45px;
+    font-size: 15px;
+}
+.main-left .active {
+    background-color: #c9c9c9;
+}
+
+/* 右侧 */
+.main-right {
+    flex: 1;
+    overflow-y: auto;
+    height: 100%;
+    padding: 10px;
+}
+.main-right ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+}
+.main-right li {
+    float: left;
+    width: 33.333%;
+}
+.main-right li a {
+    display: block;
+    text-align: center;
+}
+.main-right a img {
+    display: block;
+    margin: 0 auto;
+    max-width: 66px;
+}
+.main-right a p {
+    font-size: 13px;
+}
+
