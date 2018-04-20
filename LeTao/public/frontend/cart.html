@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <!-- 引入mui-css文件 -->
+    <link rel="stylesheet" href="./mui/css/mui.min.css">
+    <link rel="stylesheet" href="./mui/css/icons-extra.css">
+    <link rel="stylesheet" href="./mui/fonts/mui-icons-extra.ttf">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/cart.css">
+
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-arrowleft mui-icon-left"></a>
+        <a class="mui-icon mui-icon-loop mui-icon-right"></a>
+        <h1 class="mui-title">购物车</h1>
+    </header>
+
+    <div class="mui-content">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-media">
+                <a class="mui-navigate-right" href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="./images/product.jpg">
+                    <div class="mui-media-body">
+                        <p>匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>
+                    </div>
+                    <div class="media-detail">
+                        <span style="color: #ff5328" class="first">￥499.1</span>
+                        <del style="color: #d2d2d2">￥888.1</del>
+                        <span style="float: right; margin-right: 5px;">x1双</span>
+                    </div>
+                    <div class="mui-left">
+                        <label></label>
+                        <input type="checkbox">
+                    </div>
+                    <p class="mui-right">鞋码：50</p>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a class="mui-navigate-right" href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="./images/product.jpg">
+                    <div class="mui-media-body">
+                        <p>李宁闪击篮球鞋驭帅10镭射队尚4男韦德之 道空袭中高帮队尚3.5 球鞋</p>
+                    </div>
+                    <div class="media-detail">
+                        <span style="color: #ff5328" class="first">￥499.1</span>
+                        <del style="color: #d2d2d2">￥888.1</del>
+                        <span style="float: right; margin-right: 5px;">x2双</span>
+                    </div>
+                    <div class="mui-left">
+                        <label></label>
+                        <input type="checkbox">
+                    </div>
+                    <p class="mui-right">鞋码：45</p>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a class="mui-navigate-right" href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="./images/detail.jpg">
+                    <div class="mui-media-body">
+                        <p>Sport飓风 Nike Kwazi 休闲运动鞋男    844839-002-001-100-400</p>
+                    </div>
+                    <div class="media-detail">
+                        <span style="color: #ff5328" class="first">￥499.1</span>
+                        <del style="color: #d2d2d2">￥888.1</del>
+                        <span style="float: right; margin-right: 5px;">x4双</span>
+                    </div>
+                    <div class="mui-left">
+                        <label></label>
+                        <input type="checkbox">
+                    </div>
+                    <p class="mui-right">鞋码：40</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="cart_order">
+        订单总额：¥<span id="cartAmount">0.00</span> 
+        <a href="javascript:;">生成订单</a>
+    </div>
+
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+</body>
+
+</html>
