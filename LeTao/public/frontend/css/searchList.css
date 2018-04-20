@@ -1,0 +1,98 @@
+body {
+    background-color: #fff;
+}
+
+/* 主体 */
+.cz_container {
+    height: 100%;
+    width: 100%;
+}
+
+.cz_container {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.cz_search {
+    position: relative;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.cz_search .search_input {
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    padding-left: 10px;
+    text-align: left;
+    border: 1px solid #006699;
+    background: #fff;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.cz_search .search_btn {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 30px;
+    width: 60px;
+    background: #006699;
+    border-radius: 0 4px 4px 0;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    line-height: 30px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+}
+.cz_history {
+    position: relative;
+    padding: 10px;
+    color: #666;
+}
+.cz_history .title {
+    font-size: 14px;
+    float: left;
+    line-height: 20px;
+}
+.cz_history .title-r {
+    font-size: 14px;
+    float: right;
+    line-height: 20px;
+}
+.cz_history .mui-icon-trash {
+    position: absolute;
+    top: 11px;
+    right: 70px;
+    font-size: 17px;
+    color: #74746b;
+}
+
+/* 搜索框 */
+.mui-input-group {
+    position: relative;
+    margin: 0 10px 0 10px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+/* .searchList-input {
+    position: relative !important;
+} */
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea {
+    padding: 0 0 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.searchList-input .mui-icon-closeempty {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-weight: 700;
+    color: #6b6d66;
+}
