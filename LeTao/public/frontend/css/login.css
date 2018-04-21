@@ -1,0 +1,27 @@
+body {
+    background-color: #fff;
+}
+.mui-input-group {
+    padding: 10px;
+}
+.mui-input-row {
+    box-shadow: 0 0 1px #333;
+}
+.mui-input-row:nth-child(2) {
+    margin: 20px 0 40px 0;
+}
+.mui-btn, button, input[type=button], input[type=reset], input[type=submit] {
+    font-size: 15px;
+    width: 100%;
+}
+.mui-input-group .mui-input-row:after {
+    background-color: transparent;
+}
+.mui-input-group:after {
+    background-color: transparent;  
+}
+.mui-button-row:nth-child(4) {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: right;
+}
