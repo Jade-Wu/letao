@@ -5,38 +5,470 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登录</title>
+    <!-- 引入浏览器默认样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
     <!-- 引入mui-css文件 -->
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
     <link rel="stylesheet" href="./lib/mui/css/icons-extra.css">
     <link rel="stylesheet" href="./lib/mui/fonts/mui-icons-extra.ttf">
+    <!-- 公共样式 -->
     <link rel="stylesheet" href="./css/common.css">
+    <!-- 当前样式 -->
     <link rel="stylesheet" href="./css/index.css">
-    
+    <!-- 引入网站图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="mui-bar mui-bar-nav">
         <a class="mui-icon mui-icon-bars mui-pull-left mui-icon mui-icon mui-icon-arrowleft"></a>
         <a id="info" class="mui-icon mui-icon-info-filled mui-pull-right mui-plus-visible" style="color: #999;"></a>
-        <h1 class="mui-title">登录</h1>
+        <h1 class="mui-title">首页</h1>
     </header>
-    
     <nav class="mui-bar mui-bar-tab">
-        <a class="mui-tab-item mui-active" href="#tabbar">
-            <span class="mui-icon mui-icon-home"></span>
-            <span class="mui-tab-label">首页</span>
-        </a>
-        <a class="mui-tab-item" href="#tabbar-with-chat">
-            <span class="mui-icon mui-icon-bars"></span>
-            <span class="mui-tab-label">分类</span>
-        </a>
-        <a class="mui-tab-item" href="#tabbar-with-contact">
-            <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
-            <span class="mui-tab-label">购物车</span>
-        </a>
-        <a class="mui-tab-item" href="#tabbar-with-map">
-            <span class="mui-icon mui-icon-person"></span>
-            <span class="mui-tab-label">会员中心</span>
-        </a>
-	</nav>
+            <a class="mui-tab-item mui-active" href="#tabbar">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-chat">
+                <span class="mui-icon mui-icon-bars"></span>
+                <span class="mui-tab-label">分类</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-contact">
+                <span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
+                <span class="mui-tab-label">购物车</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-map">
+                <span class="mui-icon mui-icon-person"></span>
+                <span class="mui-tab-label">会员中心</span>
+            </a>
+        </nav>  
+    <!-- 3.主体 -->
+    <main class="mui-content mui-scroll-wrapper">
+        <div class="mui-scroll">
+            <!-- 3.1 轮播图 -->
+            <div id="slider" class="mui-slider">
+                <div class="mui-slider-group mui-slider-loop">
+                <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="./images/banner6.png">
+                        </a>
+                    </div>
+                    <!-- 第一张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="./images/banner1.png">
+                        </a>
+                    </div>
+                    <!-- 第二张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="./images/banner2.png">
+                        </a>
+                    </div>
+                    <!-- 第三张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="./images/banner3.png">
+                        </a>
+                    </div>
+                    <!-- 第四张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="./images/banner4.png">
+                        </a>
+                    </div>
+            
+                    <!-- 第五张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="./images/banner5.png">
+                        </a>
+                    </div>
+            
+                    <!-- 第六张 -->
+                    <div class="mui-slider-item">
+                        <a href="#">
+                            <img src="./images/banner6.png">
+                        </a>
+                    </div>
+                    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                    <div class="mui-slider-item mui-slider-item-duplicate">
+                        <a href="#">
+                            <img src="./images/banner1.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="mui-slider-indicator">
+                    <div class="mui-indicator mui-active"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                    <div class="mui-indicator"></div>
+                </div>
+            </div>
+        
+            <!-- 4.九宫格 -->
+            <div class="lt-nine-box">
+            <a href="javascript:;">
+                <img src="./images/nav1.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="./images/nav2.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="./images/nav3.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="./images/nav4.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="./images/nav5.png" alt="">
+            </a>
+            <a href="javascript:;">
+                <img src="./images/nav6.png" alt="">
+            </a>
+            </div>
+        
+            <!-- 5.售卖 -->
+            <div class="lt-sale">
+            <ul>
+                <li>
+                <a href="javascript:;">
+                    <img src="./images/active1.png" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="./images/active2.png" alt="">
+                </a>
+                </li>
+                <li>
+                <a href="javascript:;">
+                    <img src="./images/active3.png" alt="">
+                </a>
+                </li>
+                <li>
+                <a href="javascript:;">
+                    <img src="./images/active4.png" alt="">
+                </a>
+                <a href="javascript:;">
+                    <img src="./images/active5.png" alt="">
+                </a>
+                </li>
+            </ul>
+            </div>
+        
+            <!-- 6.品牌专区 -->
+            <div class="lt-brand">
+            <div class="lt-brand-tittle">
+                <img src="./images/title0.png" alt="">
+            </div>
+            <div class="lt-brand-content">
+                <a href="javascript:;">
+                <img src="./images/brand1.png" alt="">
+                </a>
+                <a href="javascript:;">
+                <img src="./images/brand2.png" alt="">
+                </a>
+                <a href="javascript:;">
+                <img src="./images/brand3.png" alt="">
+                </a>
+                <a href="javascript:;">
+                <img src="./images/brand4.png" alt="">
+                </a>
+                <a href="javascript:;">
+                <img src="./images/brand5.png" alt="">
+                </a>
+                <a href="javascript:;">
+                <img src="./images/brand6.png" alt="">
+                </a>
+                <a href="javascript:;">
+                <img src="./images/brand7.png" alt="">
+                </a>
+                <a href="javascript:;">
+                <img src="./images/brand8.png" alt="">
+                </a>
+            </div>
+            </div>
+        
+            <!-- 7.运动生活专区 -->
+            <div class="lt-sports">
+            <!-- 7.1 顶部 -->
+            <div class="lt-sports-title">
+                <img src="./images/title1.png" alt="">
+            </div>
+            <!-- 7.2 商品列表 -->
+            <div class="lt-sports-content">
+                <ul>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <!-- p标签  商品名称  
+                    问题: 商品名称内容作为开发者不能控制
+                    需要做的是 自动出现省略号
+                    -->
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <!-- p标签  商品名称  
+                    问题: 商品名称内容作为开发者不能控制
+                    需要做的是 自动出现省略号
+                    -->
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <!-- p标签  商品名称  
+                    问题: 商品名称内容作为开发者不能控制
+                    需要做的是 自动出现省略号
+                    -->
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <!-- p标签  商品名称  
+                    问题: 商品名称内容作为开发者不能控制
+                    需要做的是 自动出现省略号
+                    -->
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            </div>
+
+            <!-- 8.女士专区 -->
+            <div class="lt-sports">
+            <!-- 7.1 顶部 -->
+            <div class="lt-sports-title">
+                <img src="./images/title2.png" alt="">
+            </div>
+            <!-- 7.2 商品列表 -->
+            <div class="lt-sports-content">
+                <ul>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <!-- p标签  商品名称  
+                        问题: 商品名称内容作为开发者不能控制
+                        需要做的是 自动出现省略号
+                        -->
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <!-- p标签  商品名称  
+                        问题: 商品名称内容作为开发者不能控制
+                        需要做的是 自动出现省略号
+                        -->
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <!-- p标签  商品名称  
+                        问题: 商品名称内容作为开发者不能控制
+                        需要做的是 自动出现省略号
+                        -->
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <!-- p标签  商品名称  
+                        问题: 商品名称内容作为开发者不能控制
+                        需要做的是 自动出现省略号
+                        -->
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            </div>
+
+            <!-- 9.男士专区 -->
+            <div class="lt-sports">
+            <!-- 7.1 顶部 -->
+            <div class="lt-sports-title">
+                <img src="./images/title3.png" alt="">
+            </div>
+            <!-- 7.2 商品列表 -->
+            <div class="lt-sports-content">
+                <ul>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                    <a class="pic" href="javascript:;">
+                        <img src="./images/product.jpg" alt="">
+                    </a>
+                    <!-- p标签  商品名称  
+                        问题: 商品名称内容作为开发者不能控制
+                        需要做的是 自动出现省略号
+                        -->
+                    <p>
+                        adidas阿迪达斯男式场下休闲篮球鞋S83700阿迪达斯男式场下休闲篮球鞋
+                    </p>
+        
+                    <div class="price">
+                        <span>&yen;560.00</span>
+                        <span>&yen;888.00</span>
+                    </div>
+                    <a class="btn" href="javascript:;">立即购买</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    
+    
+    <!-- 引入zepto -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 引入MUI -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- 引入首页js -->
+    <script src="./js/index.js"></script>
 </body>
 </html>
